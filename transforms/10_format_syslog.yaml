@@ -1,0 +1,8 @@
+type: "remap"
+inputs: ["9_enriched_events"]
+source: |
+  . = parse_json!(.message)
+  del(.source_type)
+  del(.subject)
+  del(.message)
+  del(.timestamp)
