@@ -1,6 +1,9 @@
 type: "nats"
 # add more datasets/sources to the list below (they need to comply with ECS format)
-inputs: [ "7_format_ecs" ]
+inputs:
+  - "7_format_ecs"
+#  - "syslog_email_ecs"
+#  - "syslog_firewall_ecs"
 subject: "ecs_events"
 encoding:
   codec: "json"
