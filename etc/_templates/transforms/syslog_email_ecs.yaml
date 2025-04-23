@@ -3,6 +3,8 @@
 #   ...which will be parsed as:
 #   {"@timestamp":"2025-04-14T09:00:00Z","destination":{"domain":"swap.net"},"ecs":{"version":"1.6.0"},"host":"127.0.0.1","port":36599,"source":{"domain":"imperiocontabilidadepi.shop"},"source_type":"socket","timestamp":"2025-04-15T15:42:04.950021862Z"}
 
+# IMPORTANT: you need to add this as input in '8_enrichment_queue' sink
+
 type: remap
 inputs: [ "template_syslog" ]
 source: |
