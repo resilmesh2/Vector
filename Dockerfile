@@ -10,4 +10,5 @@ COPY ../sinks /etc/vector/sinks
 RUN adduser vector --system
 RUN chown -R vector:nogroup /var/lib/vector/
 RUN chown -R vector:nogroup /etc/vector
+# RUN ls -laR /etc/vector
 USER vector
