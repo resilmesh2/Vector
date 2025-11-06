@@ -4,7 +4,7 @@ services:
     hostname: "vector"
     restart: unless-stopped
     env_file:
-      - "../../resilmesh.conf"
+      - ".env"
     build:
       context: "./"
     command: "--config-dir /etc/vector"
@@ -18,5 +18,3 @@ services:
       - resilmesh_network
     extra_hosts:
       - "host.docker.internal:host-gateway"
-#    volumes:
-#      - ./etc/vector:/etc/vector
