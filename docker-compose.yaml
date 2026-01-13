@@ -1,6 +1,6 @@
 services:
   resilmesh_ap_vector:
-    container_name: "Vector"
+    container_name: "resilmesh_ap_vector"
     hostname: "vector"
     restart: unless-stopped
     env_file:
