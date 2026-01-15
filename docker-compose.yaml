@@ -1,6 +1,6 @@
 services:
-  resilmesh_ap_vector:
-    container_name: "resilmesh_ap_vector"
+  resilmesh-ap-vector:
+    container_name: "resilmesh-ap-vector"
     hostname: "vector"
     restart: unless-stopped
     env_file:
@@ -9,7 +9,7 @@ services:
       context: "./"
     command: "--config-dir /etc/vector"
     depends_on:
-      resilmesh_ap_silentpush:
+      resilmesh-ap-silentpush:
         condition: service_healthy
         restart: true
     ports:
