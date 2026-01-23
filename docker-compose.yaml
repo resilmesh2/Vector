@@ -8,10 +8,10 @@ services:
     build:
       context: "./"
     command: "--config-dir /etc/vector"
- #   depends_on:
- #     resilmesh-ap-silentpush:
- #       condition: service_healthy
- #       restart: true
+    depends_on:
+      resilmesh-ap-silentpush:
+        condition: service_healthy
+        restart: true
     ports:
       - 8686
     networks:
