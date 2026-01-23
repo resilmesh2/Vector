@@ -3,7 +3,7 @@ inputs: [ "1_dedupe_csv" ]
 subject: "deduped_csv_events"
 encoding:
   codec: "json"
-url: "nats://nats:4222"
+url: "nats://resilmesh-ap-nats:4222"
 connection_name: "2_deduped"
 # IMPORTANT: we need to throttle the data according to the consumers capacity
 # to avoid 'slow consumer' NATS (it will drop messages!)
